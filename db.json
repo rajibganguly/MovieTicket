@@ -1,0 +1,95 @@
+{
+  "auditorium": [
+    {
+      "audi": "A1",
+      "name": "RAMBO",
+      "poster": "../../assets/img/movie-details/RAMBO.jpg",
+      "totalseats": 19,
+      "currentoccupy": 0,
+      "houseful": false,
+      "time": ["2:30", "5:30", "8:30"]
+    },
+    {
+      "audi": "A2",
+      "name": "AVATAR",
+      "poster": "../../assets/img/movie-details/AVATAR.jpg",
+      "totalseats": 19,
+      "currentoccupy": 0,
+      "houseful": false,
+      "time": ["2:30", "5:30", "8:30"]
+    },
+    {
+      "audi": "A3",
+      "name": "MATRIX",
+      "poster": "../../assets/img/movie-details/MATRIX.jpg",
+      "totalseats": 19,
+      "currentoccupy": 0,
+      "houseful": false,
+      "time": ["2:30", "5:30", "8:30"]
+    }
+  ],
+  "catagory": [
+    {
+      "type": "silver",
+      "id": 10023,
+      "seat": "C1",
+      "bookingstatus": false
+    },
+    {
+      "type": "silver",
+      "id": 10024,
+      "seat": "C2",
+      "bookingstatus": true
+    },
+    {
+      "type": "silver",
+      "id": 10025,
+      "seat": "C3",
+      "bookingstatus": true
+    },
+    {
+      "type": "silver",
+      "id": 10026,
+      "seat": "C4",
+      "bookingstatus": true
+    },
+    {
+      "type": "gold",
+      "id": 10027,
+      "seat": "B1",
+      "bookingstatus": true
+    },
+    {
+      "type": "platinum",
+      "id": 10028,
+      "seat": "A1",
+      "bookingstatus": true
+    },
+    {
+      "type": "platinum",
+      "id": 10029,
+      "seat": "A2",
+      "bookingstatus": true
+    },
+    {
+      "type": "platinum",
+      "id": 10030,
+      "seat": "A3",
+      "bookingstatus": false
+    },
+    {
+      "type": "platinum",
+      "id": 10031,
+      "seat": "A4",
+      "bookingstatus": false
+    }
+  ],
+  "user": [
+    {
+      "shows": "",
+      "movietitle": "",
+      "seats": "",
+      "totalamount": 0
+    }
+  ]
+}

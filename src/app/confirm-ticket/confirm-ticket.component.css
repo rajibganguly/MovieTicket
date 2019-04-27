@@ -1,0 +1,11 @@
+.confirmbox {
+  width: 60%;
+  background:none;
+  border:none;
+  margin:0 auto;
+  height: 25em;
+}
+.confirmbox p {
+  margin:0;
+}
+

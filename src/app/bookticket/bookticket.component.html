@@ -1,0 +1,39 @@
+<div class="d-flex justify-content-center m-1">
+  <img width="200" alt="Angular Logo" src="../assets/img/logo.png">
+</div>
+<div class="auditorium-name">{{pageAudi}}</div>
+<div class="theater">
+  <header class="screen"></header>
+
+  <section class="seatsRow">
+      <span>Silver Seats</span>
+      <div class="d-flex justify-content-center m-3">
+          <button class="cust-seats"
+          (click)="seatDetails(sit)"
+          *ngFor="let sit of silverSeats"
+          [disabled]="sit.bookingstatus">{{ sit.seat }}</button>
+      </div>
+      <hr/>
+  </section>
+
+  <section class="seatsRow">
+      <span>Gold Seats</span>
+      <div class="d-flex justify-content-center m-3">
+          <button class="cust-seats" (click)="seatDetails(sit)" *ngFor="let sit of goldSeats" [disabled]="sit.bookingstatus">{{ sit.seat }}</button>
+      </div>
+      <hr/>
+  </section>
+
+  <section class="seatsRow">
+      <span>Platinum Seats</span>
+      <div class="d-flex justify-content-center m-3">
+          <button class="cust-seats" (click)="seatDetails(sit)" *ngFor="let sit of platinumSeats" [disabled]="sit.bookingstatus">{{ sit.seat }}</button>
+      </div>
+      <hr/>
+  </section>
+
+  <section class="d-flex justify-content-center">
+      <button class="btn-lg btn btn-dark" (click)="nextProcess()">PROCEED NOW</button>
+  </section>
+
+</div>

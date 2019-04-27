@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center m-1">
+    <img width="200" alt="Angular Logo" src="../assets/img/logo.png">
+  </div>
+    <section class="d-flex justify-content-center mt-6">
+        <div class="row card confirmbox">
+            <div class="col-5">
+              <img [src]="imagePath" class="img-fluid" alt="">
+            </div>
+            <div class="card-body col-7">
+                <p class="card-text">Show no: {{audiName}}</p>
+                  <p class="card-text">Seats: <strong *ngFor="let x of confirmSeats"> {{x}},</strong></p>
+                  <h5>Successfully Booked - Show {{movieName}}</h5>
+                  <p class="card-text">SubTotal: <strong>Rs. {{movieSeatPrice}}</strong>></p>
+                  <p class="card-text">Service Tax @14%: <strong>Rs. {{movieSeatPriceServiceTax}}</strong></p>
+                  <p class="card-text">Swachh Bharat Cess @0.5%: <strong>Rs. {{movieSeatPriceSwatBharatCess}}</strong></p>
+                  <p class="card-text">Krishi Kalyan Cess @0.5%: <strong>Rs. {{movieSeatPriceSwatBharatCess}}</strong></p>
+                  <p class="card-text">Total: <strong>Rs. {{subTotalAll}}</strong></p>
+            </div>
+          </div>
+    </section>
+
+
+
+    <section class="d-flex justify-content-center">
+        <button class="btn-lg btn btn-dark mr-1" (click)="confirmTicket()">I AM DONE</button>
+    </section>
+
+

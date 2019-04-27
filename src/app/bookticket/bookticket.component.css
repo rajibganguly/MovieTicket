@@ -1,0 +1,22 @@
+.theater {
+  border: 1px solid #A5A549;
+  padding: 0 2em 2em 2em;
+}
+.theater>.screen {
+  background: url('./../../assets/img/sprite.png') 0 0 no-repeat;
+  width: 424px;
+  height: 50px;
+  margin: 0 auto;
+}
+.theater>button {
+  text-align: center;
+}
+.theater>.seatsRow:first-child {
+  border-top: 1px solid #eee;
+}
+.theater>.seatsRow>span {
+  color: #ccc;
+  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
+}

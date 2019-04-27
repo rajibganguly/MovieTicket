@@ -1,0 +1,187 @@
+/* Added Bootstrap for responsive style */
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../node_modules/bootstrap/dist/css/bootstrap-grid.css';
+
+/* Application used custom Design Stuff*/
+body {
+  background: rgb(243,244,220);
+  color: #f2f2f2;
+}
+.blackbox {
+  background: rgba(0,0,0,0.95);
+  border: 1px solid rgb(0, 102, 255);
+  width: 70%;
+  min-height: 464px;
+  margin: auto;
+}
+body.home {
+  background: #000 url('../src/assets/img/mtic-bg.jpg') center 0 no-repeat fixed
+}
+body.booking {
+  background: #000 url('../src/assets/img/mtic-booking.jpg') center 0 no-repeat fixed;
+}
+body.confirm {
+  background: #000 url('../src/assets/img/mtic-confirm.jpg') center 0 no-repeat fixed;
+}
+body.finalresult {
+  background: #000 url('../src/assets/img/mtic-finalresult.jpg') center 0 no-repeat fixed;
+}
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.display-6 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #39CCFC;
+}
+.m-5 {
+  margin: 2.5rem !important;
+}
+.m-6 {
+  margin: 3.5rem !important;
+}
+.mt-6 {
+  margin-top: 3.5rem !important;
+}
+
+.cust-seats {
+  background: url('../src/assets/img/seat-img.png') 0 0 no-repeat;
+  border: none;
+  font-weight: 700;
+  color: #FFF;
+  padding: 0.2em 1em 0.7em 1em;
+  margin: 2px;
+}
+
+button.cust-seats:disabled,
+button.cust-seats[disabled]{
+  border:none !important;
+  background: url('../src/assets/img/seat-img.png') -54px 0 no-repeat;
+  color: #FFF !important;
+}
+.shows .showss {
+  width: 190px;
+  height: 265px;
+  margin:1em;
+  position: relative;
+  cursor:pointer;
+  border:none;
+  outline: none;
+}
+.shows .showss span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: #000;
+  left: 31%;
+  bottom: -35px;
+  border-radius: 48px;
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.8em;
+}
+.shows .showss span.time {
+  position: absolute;
+    width: 50px;
+    height: 25px;
+    color: #fff;
+    left: 31%;
+    bottom: -56px;
+    text-align: center;
+    font-size: 0.8em;
+    background: blue;
+    border-radius: 0;
+}
+
+
+.ticket {
+  background: url('../src/assets/img/sprite.png') 6px -47px no-repeat;
+  width: 307px;
+    height: 169px;
+}
+.ticket >.contents {
+  padding: 38px 36px 0px 91px;
+  color: #fff;
+}
+.ticket >.print {
+  float:right;
+  background: url('../src/assets/img/sprite.png') -344px -127px no-repeat;
+  border:none;
+  width:80px;
+  height:80px;
+}
+
+
+.auditorium-name {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: green;
+  color: #fff;
+  padding: 0.2em 0.4em;
+  border-radius: 25px;
+  font-size: 1.4em;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  letter-spacing: -0.08em;
+  animation: jump 2s infinite linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 0;
+    right: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    top: 5px;
+    right: 5px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    right: 0;
+    transform: rotate(359deg);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .blackbox {
+    background: rgba(0,0,0,0.95);
+    border: 1px solid rgb(0, 102, 255);
+    width: 600px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .blackbox {
+    background: rgba(0,0,0,0.95);
+    border: 1px solid rgb(0, 102, 255);
+    width: 100%;
+    margin: auto;
+  }
+  .shows {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .blackbox {
+    background: rgba(0,0,0,0.95);
+    border: 1px solid rgb(0, 102, 255);
+    width: 100%;
+    margin: auto;
+  }
+  .shows {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+
+
